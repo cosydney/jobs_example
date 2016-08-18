@@ -17,6 +17,12 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+# background jobs
+gem 'sidekiq'
+gem 'sinatra'  # Dependency for the Sidekiq Dashboard
+gem 'sidekiq-failures'
+
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
@@ -24,8 +30,8 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
-  
-  
+
+
 end
 
 gem 'rails_12factor', group: :production
